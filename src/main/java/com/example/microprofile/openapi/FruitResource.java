@@ -40,5 +40,11 @@ public class FruitResource {
         this.fruits.removeIf(existingFruit -> existingFruit.getName().contentEquals(fruit.getName()));
         return this.fruits;
     }
+    
+    //	comment this method in order to deploy successfully
+    @Path("resource")
+    public FruitResource getResourceLocator() {
+	return this;
+    }
 }
 
