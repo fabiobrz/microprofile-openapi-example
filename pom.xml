@@ -10,22 +10,21 @@
     <packaging>war</packaging>
 
     <name>microprofile-openapi Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
+    <!-- Update the value with the URL of the project -->
     <url>http://www.example.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <version.server.bom>19.0.0.Final</version.server.bom>
+        <version.server.bom>1.0.0.GA</version.server.bom>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!-- importing the microprofile BOM adds MicroProfile specs -->
             <dependency>
-                <groupId>org.wildfly.bom</groupId>
-                <artifactId>wildfly-microprofile</artifactId>
+                <groupId>org.jboss.bom</groupId>
+                <artifactId>jboss-eap-xp-microprofile</artifactId>
                 <version>${version.server.bom}</version>
                 <type>pom</type>
                 <scope>import</scope>
